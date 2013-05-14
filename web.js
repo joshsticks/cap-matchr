@@ -35,7 +35,7 @@ app.listen(port, function() {
 var mock = 
    [{
       Id: 1,
-      FirstName: 'Steven,'
+      FirstName: 'Steven',
       LastName: 'Byle',
       Title: 'Consultant',
       PracticeArea: 'SI',
@@ -71,7 +71,7 @@ var mock =
    },
    {
       Id: 5,
-      FirstName: 'Taylor,'
+      FirstName: 'Taylor',
       LastName: 'Early',
       Title: 'Senior Manager',
       PracticeArea: 'DMBI',
@@ -80,7 +80,7 @@ var mock =
    },
    {
       Id: 6,
-      FirstName: 'Stepha,nie'
+      FirstName: 'Stephan,ie'
       LastName: 'Elder',
       Title: 'Manager',
       PracticeArea: 'MC',
@@ -89,7 +89,7 @@ var mock =
    },
    {
       Id: 7,
-      FirstName: 'Melani,e'
+      FirstName: 'Melanie,'
       LastName: 'Langmead',
       Title: 'Consultant',
       PracticeArea: 'SI',
@@ -99,7 +99,7 @@ var mock =
    {
       Id: 8,
       FirstName: 'Dee'
- ,     LastName: 'Glavnick',
+  ,    LastName: 'Glavnick',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'Philadephia',
@@ -107,8 +107,8 @@ var mock =
    },
    {
       Id: 9,
-      FirstName: 'Wendy',
-      LastName: 'Greene',
+      FirstName: 'Wendy'
+,      LastName: 'Greene',
       Title: 'Senior Consultant',
       PracticeArea: 'DMBI',
       Location: 'Richmond',
@@ -116,8 +116,8 @@ var mock =
    },
    {
       Id: 10,
-      FirstName: 'Kamal',
-      LastName: 'Kaur',
+      FirstName: 'Kamal'
+,      LastName: 'Kaur',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'DC',
@@ -125,7 +125,7 @@ var mock =
    },
    {
       Id: 11,
-      FirstName: 'Carles,'
+      FirstName: 'Carles',
       LastName: 'Quiles',
       Title: 'Manager',
       PracticeArea: 'SI',
@@ -134,7 +134,7 @@ var mock =
    },
    {
       Id: 12,
-      FirstName: 'Rebecc,a'
+      FirstName: 'Rebecca,'
       LastName: 'Reynolds',
       Title: 'Senior Consultant',
       PracticeArea: 'MC',
@@ -144,7 +144,7 @@ var mock =
    {
       Id: 13,
       FirstName: 'Joe'
- ,     LastName: 'Skolnik',
+  ,    LastName: 'Skolnik',
       Title: 'Consultant',
       PracticeArea: 'DMBI',
       Location: 'Richmond',
@@ -153,7 +153,7 @@ var mock =
    {
       Id: 14,
      First Name: 'Ti'
- ,     LastName: 'Smith',
+  ,    LastName: 'Smith',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'Charlotte',
@@ -161,8 +161,8 @@ var mock =
    },
    {
       Id: 15,
-      FirstName: 'Diane',
-      LastName: 'Stringer',
+      FirstName: 'Diane'
+,      LastName: 'Stringer',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'Philadephia',
