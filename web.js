@@ -1,5 +1,4 @@
 var express = require('express');
-var request = require('request');
 var app = express.createServer(express.logger());
 
 var allowCrossDomain = function(req, res, next) {
@@ -25,12 +24,8 @@ app.get('/', function(request, response) {
 });
 
 app.get('/api/list', function(request, response) {
-   console.log('starting request');
-   request.get('http://www.google.com', function (error, response, body) {
-     if (!error && response.statusCode == 200) {
-       console.log(body) // Print the google web page.
-     }
-   })
+   var results = {'Name':'Matt','Title':'Manager'};
+   response.send(200, results);
 });
 
 var port = process.env.PORT || 5000;
