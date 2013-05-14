@@ -26,7 +26,7 @@ app.get('/', function(request, response) {
 
 app.get('/api/list', function(request, response) {
    console.log('starting request');
-   request('http://www.google.com', function (error, response, body) {
+   request.get('http://www.google.com', function (error, response, body) {
      if (!error && response.statusCode == 200) {
        console.log(body) // Print the google web page.
      }
