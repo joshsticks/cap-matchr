@@ -33,14 +33,15 @@ app.listen(port, function() {
 });
 
 var mock = {
-   {
-      Name: Matt,
-      Title: Manager
+   Employees:
+   [{
+      Name: 'Matt',
+      Title: 'Manager'
    },
    {
-      Name: Reid
-      Title: Consultant
-   }
+      Name: 'Reid',
+      Title: 'Consultant'
+   }]
 };
 
 
