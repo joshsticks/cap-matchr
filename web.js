@@ -2,7 +2,6 @@ var express = require('express');
 var request = require("request");
 var app = express.createServer(express.logger());
 
-
 var allowCrossDomain = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
@@ -31,6 +30,9 @@ app.get('/api/list', function(request, response) {
            var resultsObj = JSON.parse(body);
            //Just an example of how to access properties:
            response.send(200, resultsObj);
+       }
+       else {
+         response.send(500, err);
        }
    });
    // $.ajax({
