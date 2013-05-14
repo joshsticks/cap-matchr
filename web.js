@@ -1,5 +1,7 @@
 var express = require('express');
+var request = require("request");
 var app = express.createServer(express.logger());
+
 
 var allowCrossDomain = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
@@ -24,15 +26,22 @@ app.get('/', function(request, response) {
 });
 
 app.get('/api/list', function(request, response) {
-   $.ajax({
-     url:'http://slaughter-spottr.herokuapp.com/api/count',
-      success:function(data) {
-         response.send(200, data);
-      },
-      error: function(jqXHR) {
-         response.send(500, data);
-      }
+   request.get("http://slaughter-spottr.herokuapp.com/api/count", function (err, res, body) {
+       if (!err) {
+           var resultsObj = JSON.parse(body);
+           //Just an example of how to access properties:
+           response.send(200, resultsObj);
+       }
    });
+   // $.ajax({
+   //    url:'http://slaughter-spottr.herokuapp.com/api/count',
+   //    success:function(data) {
+   //       response.send(200, data);
+   //    },
+   //    error: function(jqXHR) {
+   //       response.send(500, data);
+   //    }
+   // });
 });
 
 var port = process.env.PORT || 5000;
