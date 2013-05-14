@@ -1,5 +1,5 @@
 var express = require('express');
-var request = require("request");
+var request = require('request');
 var app = express.createServer(express.logger());
 
 var allowCrossDomain = function(req, res, next) {
@@ -26,9 +26,11 @@ app.get('/', function(request, response) {
 
 app.get('/api/list', function(request, response) {
    console.log('starting request');
-   request("http://slaughter-spottr.herokuapp.com/api/count", function(error, response, body) {
-     console.log(body);
-   });
+   request('http://www.google.com', function (error, response, body) {
+     if (!error && response.statusCode == 200) {
+       console.log(body) // Print the google web page.
+     }
+   })
 });
 
 var port = process.env.PORT || 5000;
