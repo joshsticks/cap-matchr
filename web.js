@@ -35,7 +35,8 @@ app.listen(port, function() {
 var mock = 
    [{
       Id: 1,
-      Name: 'Steven Byle',
+      FirstName: 'Steven,'
+      LastName: 'Byle',
       Title: 'Consultant',
       PracticeArea: 'SI',
       Location: 'Richmond',
@@ -43,7 +44,8 @@ var mock =
    },
    {
       Id: 2,
-      Name: 'David Burgess',
+      FirstName: 'David',
+      LastName: 'Burgess',
       Title: 'Consultant',
       PracticeArea: 'SI',
       Location: 'Richmond',
@@ -51,7 +53,8 @@ var mock =
    },
    {
       Id: 3,
-      Name: 'Chris Cin',
+      FirstName: 'Chris',
+      LastName: 'Cin',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'Richmond',
@@ -59,7 +62,8 @@ var mock =
    },
    {
       Id: 4,
-      Name: 'Kevin Clark',
+      FirstName: 'Kevin',
+      LastName: 'Clark',
       Title: 'Senior Manager',
       PracticArea: 'MC',
       Location: 'Richmond',
@@ -67,7 +71,8 @@ var mock =
    },
    {
       Id: 5,
-      Name: 'Taylor Early',
+      FirstName: 'Taylor,'
+      LastName: 'Early',
       Title: 'Senior Manager',
       PracticeArea: 'DMBI',
       Location: 'Richmond',
@@ -75,7 +80,8 @@ var mock =
    },
    {
       Id: 6,
-      Name: 'Stephanie Elder',
+      FirstName: 'Stepha,nie'
+      LastName: 'Elder',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'Charlotte',
@@ -83,7 +89,8 @@ var mock =
    },
    {
       Id: 7,
-      Name: 'Melanie Langmead',
+      FirstName: 'Melani,e'
+      LastName: 'Langmead',
       Title: 'Consultant',
       PracticeArea: 'SI',
       Location: 'Charlotte',
@@ -91,7 +98,8 @@ var mock =
    },
    {
       Id: 8,
-      Name: 'Dee Glavnick',
+      FirstName: 'Dee'
+ ,     LastName: 'Glavnick',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'Philadephia',
@@ -99,7 +107,8 @@ var mock =
    },
    {
       Id: 9,
-      Name: 'Wendy Greene',
+      FirstName: 'Wendy',
+      LastName: 'Greene',
       Title: 'Senior Consultant',
       PracticeArea: 'DMBI',
       Location: 'Richmond',
@@ -107,7 +116,8 @@ var mock =
    },
    {
       Id: 10,
-      Name: 'Kamal Kaur',
+      FirstName: 'Kamal',
+      LastName: 'Kaur',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'DC',
@@ -115,7 +125,8 @@ var mock =
    },
    {
       Id: 11,
-      Name: 'Carles Quiles',
+      FirstName: 'Carles,'
+      LastName: 'Quiles',
       Title: 'Manager',
       PracticeArea: 'SI',
       Location: 'DC',
@@ -123,7 +134,8 @@ var mock =
    },
    {
       Id: 12,
-      Name: 'Rebecca Reynolds',
+      FirstName: 'Rebecc,a'
+      LastName: 'Reynolds',
       Title: 'Senior Consultant',
       PracticeArea: 'MC',
       Location: 'Richmond',
@@ -131,7 +143,8 @@ var mock =
    },
    {
       Id: 13,
-      Name: 'Joe Skolnik',
+      FirstName: 'Joe'
+ ,     LastName: 'Skolnik',
       Title: 'Consultant',
       PracticeArea: 'DMBI',
       Location: 'Richmond',
@@ -139,7 +152,8 @@ var mock =
    },
    {
       Id: 14,
-      Name: 'Ti Smith',
+     First Name: 'Ti'
+ ,     LastName: 'Smith',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'Charlotte',
@@ -147,7 +161,8 @@ var mock =
    },
    {
       Id: 15,
-      Name: 'Diane Stringer',
+      FirstName: 'Diane',
+      LastName: 'Stringer',
       Title: 'Manager',
       PracticeArea: 'MC',
       Location: 'Philadephia',
