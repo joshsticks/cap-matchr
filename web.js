@@ -25,25 +25,10 @@ app.get('/', function(request, response) {
 });
 
 app.get('/api/list', function(request, response) {
-   request.get("http://slaughter-spottr.herokuapp.com/api/count", function (err, res, body) {
-       if (!err) {
-           var resultsObj = JSON.parse(body);
-           //Just an example of how to access properties:
-           response.send(200, resultsObj);
-       }
-       else {
-         response.send(500, err);
-       }
+   console.log('starting request');
+   request("http://slaughter-spottr.herokuapp.com/api/count", function(error, response, body) {
+     console.log(body);
    });
-   // $.ajax({
-   //    url:'http://slaughter-spottr.herokuapp.com/api/count',
-   //    success:function(data) {
-   //       response.send(200, data);
-   //    },
-   //    error: function(jqXHR) {
-   //       response.send(500, data);
-   //    }
-   // });
 });
 
 var port = process.env.PORT || 5000;
