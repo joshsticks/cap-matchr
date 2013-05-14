@@ -24,7 +24,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/api/list', function(request, response) {
-   var results = {'Name':'Matt','Title':'Manager'};
+   var results = {Name:'Matt','Title':'Manager'};
    response.send(200, results);
 });
 
