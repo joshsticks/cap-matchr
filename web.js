@@ -24,11 +24,24 @@ app.get('/', function(request, response) {
 });
 
 app.get('/api/list', function(request, response) {
-   var results = {Name:'Matt','Title':'Manager'};
-   response.send(200, results);
+   response.send(200, mock);
 });
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
+
+var mock = {
+   {
+      Name: Matt,
+      Title: Manager
+   },
+   {
+      Name: Reid
+      Title: Consultant
+   }
+};
+
+
+
