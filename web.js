@@ -32,8 +32,7 @@ app.listen(port, function() {
   console.log("Listening on " + port);
 });
 
-var mock = {
-   Employees:
+var mock = 
    [{
       Name: 'Matt',
       Title: 'Manager',
@@ -42,8 +41,7 @@ var mock = {
    {
       Name: 'Reid',
       Title: 'Consultant'
-   }]
-};
+   }];
 
 
 
